@@ -1,0 +1,15 @@
+name: Build
+
+on:# trigger
+  push:
+  workflow_call:
+  Workflow_dispatch:
+  schedule:
+  
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Build the code 
+          run: echo "code buld using Docker" 
+       
